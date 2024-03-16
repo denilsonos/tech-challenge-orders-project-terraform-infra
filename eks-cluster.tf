@@ -9,21 +9,12 @@ module "eks" {
   subnet_ids                     = module.vpc.private_subnets
   cluster_endpoint_public_access = true
 
-  # TODO add github info
-  tags = {
-    Environment = "Development"
-    GithubRepo  = "YourRepoNameHere"
-    GithubOrg   = "YourOrganizationGitNameHere"
-  }
-
-  # TODO add app configuration pods
   eks_managed_node_groups = {
     one = {
       name = "node-group-1"
 
       # https://aws.amazon.com/pt/ec2/instance-types/t3/
-      instance_types = ["t4g.small"]
-      ami_type       = "AL2_ARM_64"
+      instance_types = ["t3.small"]
 
       min_size     = 1
       max_size     = 2
