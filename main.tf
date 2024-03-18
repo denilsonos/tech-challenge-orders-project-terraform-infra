@@ -11,6 +11,6 @@ provider "kubernetes" {
 data "aws_availability_zones" "available" {}
 
 locals {
-  cluster_name = "fiap-eks"
+  cluster_name = "new-fiap-eks"
 }
 
