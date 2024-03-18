@@ -11,7 +11,7 @@ module "eks" {
 
   eks_managed_node_groups = {
     one = {
-      name = "node-group-1"
+      name = "node-fiap-1"
 
       # https://aws.amazon.com/pt/ec2/instance-types/t3/
       instance_types = ["t3.small"]
