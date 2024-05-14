@@ -14,7 +14,7 @@ jobs:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       AWS_SESSION_TOKEN: ${{ secrets.AWS_SESSION_TOKEN }}
-      TF_VAR_region: "us-east-1" # Se quiser passar como variável, caso contrário, defina diretamente no provider do Terraform.
+      TF_VAR_region: "us-east-1e" # Se quiser passar como variável, caso contrário, defina diretamente no provider do Terraform.
 
     steps:
       - name: Checkout code
